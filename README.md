@@ -1,2 +1,2 @@
-# novabunting.github.io
+# novabunting
 Website for Paige Conrad's Nova Bunting
