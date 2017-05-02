@@ -4,41 +4,74 @@
 <title>Nova Bunting</title>
 <link rel="shortcut icon" href="/img/image1.ico" />
 </head>
+<link href="https://fonts.googleapis.com/css?family=Puritan" rel="stylesheet">
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <link rel="stylesheet" href="/css/stylesheet.css">
 <body id="body">
-    <header>
-        <img id="buntingHeader" src="/img/bunting.jpg">
+    <header id="top">
+      <img id="buntingHeader" src="/img/bunting.jpg">
       <a href="index.html"><img id="logo"src="/img/image1.jpeg"></a>
-        <div class="container" id="navContainer">
-          <ul class="navbar-nav nav" id="headerList">
-                <li><a class="headerButton" href="#about"> About</a>
-                <li><a class="headerButton" href="#buntings"> Buntings</a>
-                <li><a class="headerButton" href="#faq"> FAQ </a>
-                <li><a href="#contact">Contact</a>
-          </ul>
-        </div> 
+      <div class="container" id="navContainer">
+        <ul class="navbar-nav nav" id="headerList">
+          <li><a class="headerButton" id="nav1"> About</a>
+          <li><a class="headerButton" id="nav2"> Buntings</a>
+          <li><a class="headerButton" id="nav3"> FAQ </a>
+          <li><a id="nav4">Contact</a>
+        </ul>
+      </div> 
     </header>
   
     <div id="insta" class="container">
-      <iframe src="https://snapwidget.com/embed/code/250585" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no"  style="border:none; overflow:hidden; width:100%; "></iframe>
+      <iframe src="https://snapwidget.com/embed/code/252658" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
     </div>
     
 
     <div class="container" id="about">
-      <h3 class="heading">About</h3>
-      <p>A bunting, sometimes known as a flag bunting, is a type of home décor textile that are often colourful, strings of fabric. They can be hung indoors or outdoors, in any room, and for any occasion. A Nova Bunting is a locally made decor item made in Halifax, Nova Scotia. They come in an all shapes, sizes, lengths, and colours. Support local by supporting Nova Bunting!</p>
-
+        <h3 class="heading" id="aboutTitle"><u>About</u></h3>
+          <p id="aboutInfo">A bunting, sometimes known as a flag bunting, is a type of home décor textile that are often colourful, strings of fabric. They can be hung indoors or outdoors, in any room, and for any occasion. A Nova Bunting is a locally made decor item made in Halifax, Nova Scotia. They come in an all shapes, sizes, lengths, and colours. Support local by supporting Nova Bunting!</p>
+          <p id="aboutInfo"> I began sewing when I was 6 years old, working on clothing for stuffed animals and coin purses. I began to knit shortly after, making scarves galore. Fast forward to 2015, I got my first sewing machine and learned how to make pillowcases, quilts, and finally, buntings. Buntings allowed me to be creative. I began Nova Bunting in April 2017 to have the freedom to be creative and to spread positivity and joy through textiles and the shared love of Nova Scotia. Nova Scotia is a great place to explore and relax, and Nova Bunting embodies that culture. 
+          If you want to chat about buntings, sewing, or Halifax, catch me walking in Point Pleasant Park, sipping coffee at The Old Apothecary, or spending time with friends on the waterfront. </p>
     </div>
     <div class="container" id="buntings">
+      <h3 class="heading"><u>Buntings</u></h3>
     </div>
     <div class="container" id="faq">
+      <h3 class="heading"><u>FAQ</u></h3>
+      <h4>Q: Do you make custom Nova Buntings?</h4>
+      <h5>A: Yes! Custom Nova Buntings can be made upon request</h5>
+      <h4>Q: Where can I buy a Nova Bunting?</h4>
+      <h5>A: To purchase, please contact novabunting@gmail.com or via DM on Instagram at <a href="https://www.instagram.com/novabunting/">@novabunting</a>. I accept cash, cheque, or etransfer, but if you know of another payment service that would be more convenient for you, I'd love to hear about it!</h5>
+      <h4>Q: How much is shipping?</h4>
+      <h5>A: Shipping accross Canada is FREE! For orders outside of Canada the cost will be determined at the time of order placement</h5>
+      
     </div>
     <div class="container" id="contact">
+      <h3 class="heading"><u>Contact</u></h3>
+      <img id="contactImg" src="/img/contact.jpeg">
+      <li class="contactList"><img id="instaBadge" src="/img/instaBadge.png"><a href="https://instagram.com/novabunting">@novabunting</a></li>
+      <li class="contactList"><img id="fbBadge" src="/img/fbBadge.jpg"><a href="https://www.facebook.com/NovaBunting">Nova Bunting</a></li>
+      <li class="contactList"><img id="mailBadge" src="/img/mail.png"><a>novabunting@gmail.com</a></li>
     </div>
 </body>
 <script src="https://snapwidget.com/js/snapwidget.js"></script>   
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script>
+ $("#nav1").click(function() {
+    $('html, body').animate({scrollTop: $('#about').offset().top -310 }, 'slow');
+}); 
+  $("#nav2").click(function() {
+    $('html, body').animate({scrollTop: $('#buntings').offset().top -310 }, 'slow');
+}); 
+  $("#nav3").click(function() {
+    $('html, body').animate({scrollTop: $('#faq').offset().top -310 }, 'slow');
+}); 
+  $("#nav4").click(function() {
+    $('html, body').animate({scrollTop: $('#contact').offset().top -310 }, 'slow');
+}); 
+  $("#home").click(function() {
+    $('html, body').animate({scrollTop: $('#top').offset().top}, 'slow');
+}); 
+</script>
     
 </html>

@@ -34,6 +34,7 @@ a.headerButton{
 
 body {
   font-size: 16px;
+  font-family: 'Puritan', sans-serif;
 }
 
 #logo {
@@ -46,11 +47,13 @@ body {
 }
 
 #about{
-  margin: auto ;
+  margin: auto;
+  padding: 0px;
+  display: block;
+  background-image: url("/img/pcove.jpg");
+  width: 98%;
+  height: 650px;
   text-align: center;
-  justify-content: center;
-  position: relative;
-  
 }
 
 h3 {
@@ -73,8 +76,69 @@ header{
   width: 100%;
   height: 100%;
   margin-top: 310px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
   
 }
+
+#pcove{
+  width: 300px;
+  height: 200px;
+  float: left;
+  padding: 5px;
+}
+#aboutInfo {
+  margin: 10px;;
+  color: darkgrey;
+  width: 60%;
+  float: right;
+}
+
+#transBox{
+  background-color: #ffffff;
+  opacity: 0.6;
+  width: 100%;
+  height: 600px;
+  padding: 0px;
+  margin: 0px;
+  
+}
+
+iframe{
+  padding: 0px;
+  margin: 0px;
+}
+
+#instaBadge{
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+}
+
+#fbBadge{
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+}
+
+#mailBadge{
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+}
+
+#contactImg{
+  height: 100%;
+  width: 100%;
+  margin: 20px;
+}
+
+.contactList{
+  margin: 40px;
+  display: inline;
+  align-content: center;
+}
+
 
 
 
