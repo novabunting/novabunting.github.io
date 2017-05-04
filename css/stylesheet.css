@@ -19,7 +19,8 @@ a.headerButton{
 }
 
 #navContainer{
-  width: 350px;
+  width: 325px;
+  padding-left: 0px;
   display: block;
   margin: auto;
   padding: 1px;
@@ -33,13 +34,13 @@ a.headerButton{
 
 
 body {
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'Puritan', sans-serif;
 }
 
 #logo {
-  width: 350px;
-  height: 150px;
+  width: 25%;
+  height: 25%;
   display: block;
   margin: auto;
   padding: 0px;
@@ -70,6 +71,8 @@ header{
 
 .nav .navbar-nav{
   align-content: center;
+  width: 33%;
+  margin: auto;
   
 }
 
@@ -129,18 +132,54 @@ iframe{
 }
 
 #contactImg{
-  height: 100%;
-  width: 100%;
-  margin: 20px;
+  height: 40%%;
+  width: 40%;
+  margin: auto;
+  float: left;
+  border-radius: 15px;
 }
 
 .contactList{
-  margin: auto;
-  width: auto;
-  display: inline;
-  align-content: center;
+  width: 100%;
+  float: left;
+  margin-top: 10%
 }
 
+#contactInfo{
+  width: 40%;
+  height: 70%
+  margin: auto;
+  float: left;
+  vertical-align: center;
+}
+
+#map{
+  margin: auto;
+  vertical-align: bottom;
+  border-radius: 25px
+}
+
+#faqContent{
+  width: 60%;
+  float: left;
+}
+
+#haliPic{
+  width: 30%;
+  height: 30%;
+  border-radius: 25px;
+  margin-left: 25px;
+}
+
+.heading{
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: : center;
+  display: block;
+  width: 10%
+  
+}
 
 
 

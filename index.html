@@ -27,7 +27,7 @@
     
 
     <div class="container" id="about">
-        <h3 class="heading" id="aboutTitle"><u>About</u></h3>
+        <h3 class="heading" ><u>About</u></h3>
           <p id="aboutInfo">A bunting, sometimes known as a flag bunting, is a type of home décor textile that are often colourful, strings of fabric. They can be hung indoors or outdoors, in any room, and for any occasion. A Nova Bunting is a locally made decor item made in Halifax, Nova Scotia. They come in an all shapes, sizes, lengths, and colours. Support local by supporting Nova Bunting!</p>
           <p id="aboutInfo"> I began sewing when I was 6 years old, working on clothing for stuffed animals and coin purses. I began to knit shortly after, making scarves galore. Fast forward to 2015, I got my first sewing machine and learned how to make pillowcases, quilts, and finally, buntings. Buntings allowed me to be creative. I began Nova Bunting in April 2017 to have the freedom to be creative and to spread positivity and joy through textiles and the shared love of Nova Scotia. Nova Scotia is a great place to explore and relax, and Nova Bunting embodies that culture. 
           If you want to chat about buntings, sewing, or Halifax, catch me walking in Point Pleasant Park, sipping coffee at The Old Apothecary, or spending time with friends on the waterfront. </p>
@@ -37,20 +37,33 @@
     </div>
     <div class="container" id="faq">
       <h3 class="heading"><u>FAQ</u></h3>
-      <h4>Q: Do you make custom Nova Buntings?</h4>
-      <h5>A: Yes! Custom Nova Buntings can be made upon request</h5>
-      <h4>Q: Where can I buy a Nova Bunting?</h4>
-      <h5>A: To purchase, please contact novabunting@gmail.com or via DM on Instagram at <a href="https://www.instagram.com/novabunting/">@novabunting</a>. I accept cash, cheque, or etransfer, but if you know of another payment service that would be more convenient for you, I'd love to hear about it!</h5>
-      <h4>Q: How much is shipping?</h4>
-      <h5>A: Shipping accross Canada is FREE! For orders outside of Canada the cost will be determined at the time of order placement</h5>
-      
+      <div id="faqContent">
+        <h4>Q: Do you make custom Nova Buntings?</h4>
+        <h5>A: Yes! Custom Nova Buntings can be made upon request</h5>
+        <h4>Q: How can I buy a Nova Bunting?</h4>
+        <h5>A: To purchase, please contact novabunting@gmail.com or via DM on Instagram at <a href="https://www.instagram.com/novabunting/">@novabunting</a> to place an order. I accept cash, cheque, or etransfer, but if you know of another payment service that would be more convenient for you, I'd love to hear about it!</h5>
+        <h4>Q: How much is shipping?</h4>
+        <h5>A: Shipping accross Canada is FREE! For orders outside of Canada the cost will be determined at the time of order placement</h5>
+        <h4>Q: Are there any shops in Halifax that I can purchse a Nova Bunting?</h4>
+        <h5>A: Yes! Beginning May 11th, Nova Buntings will be available at Curio Art Market on 1479 Birmingham Street (just off Spring Garden Road) in Halifax, Nova Scotia</h5>
+      </div>
+      <img src="/img/hali.jpg" id="haliPic">
+      <iframe
+        width="60%"
+        height="45%"
+        frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAtYQrKjwFegflTflJAzXTqagFvQViKWrs
+          &q=1479+Birmingham+Street+Nova+Scotia" allowfullscreen id="map">
+      </iframe>
     </div>
     <div class="container" id="contact">
       <h3 class="heading"><u>Contact</u></h3>
       <img id="contactImg" src="/img/contact.jpeg">
-      <li class="contactList"><img id="instaBadge" src="/img/instaBadge.png"><a href="https://instagram.com/novabunting">@novabunting</a></li>
-      <li class="contactList"><img id="fbBadge" src="/img/fbBadge.jpg"><a href="https://www.facebook.com/NovaBunting">Nova Bunting</a></li>
-      <li class="contactList"><img id="mailBadge" src="/img/mail.png"><a>novabunting@gmail.com</a></li>
+      <div id="contactInfo" class="container">
+        <li class="contactList"><img id="instaBadge" src="/img/instaBadge.png"><a href="https://instagram.com/novabunting">@novabunting</a></li>
+        <li class="contactList"><img id="fbBadge" src="/img/fbBadge.jpg"><a href="https://www.facebook.com/NovaBunting">Nova Bunting</a></li>
+        <li class="contactList"><img id="mailBadge" src="/img/mail.png"><a>novabunting@gmail.com</a></li>
+        </div>
     </div>
 </body>
 <script src="https://snapwidget.com/js/snapwidget.js"></script>   
@@ -58,20 +71,26 @@
 <script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
 <script>
  $("#nav1").click(function() {
-    $('html, body').animate({scrollTop: $('#about').offset().top -310 }, 'slow');
+    var height = $('header');
+    console.log(height[0].height);
+    $('html, body').animate({scrollTop: $('#about').offset().top -height[0].scrollHeight }, 'slow');
 }); 
   $("#nav2").click(function() {
-    $('html, body').animate({scrollTop: $('#buntings').offset().top -310 }, 'slow');
+    var height = $('header');
+    console.log(height[0].height);
+    $('html, body').animate({scrollTop: $('#buntings').offset().top -height[0].scrollHeight }, 'slow');
 }); 
   $("#nav3").click(function() {
-    $('html, body').animate({scrollTop: $('#faq').offset().top -310 }, 'slow');
+    var height = $('header');
+    console.log(height[0].height);
+    $('html, body').animate({scrollTop: $('#faq').offset().top -height[0].scrollHeight }, 'slow');
 }); 
   $("#nav4").click(function() {
-    $('html, body').animate({scrollTop: $('#contact').offset().top -310 }, 'slow');
+    var height = $('header');
+    console.log(height[0].height);
+    $('html, body').animate({scrollTop: $('#contact').offset().top -height[0].scrollHeight }, 'slow');
 }); 
-  $("#home").click(function() {
-    $('html, body').animate({scrollTop: $('#top').offset().top}, 'slow');
-}); 
+
 </script>
     
 </html>
