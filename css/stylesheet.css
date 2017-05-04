@@ -69,12 +69,6 @@ header{
   top: 0px;
 }
 
-.nav .navbar-nav{
-  align-content: center;
-  width: 33%;
-  margin: auto;
-  
-}
 
 #insta{
   width: 100%;
@@ -160,13 +154,13 @@ iframe{
 }
 
 #faqContent{
-  width: 60%;
+  width: 55%;
   float: left;
 }
 
 #haliPic{
-  width: 30%;
-  height: 30%;
+  width: 30vw;
+  height: 35vh;
   border-radius: 25px;
   margin-left: 25px;
 }
@@ -179,7 +173,26 @@ iframe{
   
 }
 
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  
+}
 
+.navbar .navbar-collapse #navbar-collapse {
+    text-align: center;
+}
+
+#navContainer {
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  
+}
 
 
 
