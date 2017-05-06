@@ -9,7 +9,6 @@
 <link rel="stylesheet" href="/css/stylesheet.css">
 <body id="body">
     <header id="top">
-      <img id="buntingHeader" src="/img/pbunting.bmp">
       <a href="index.html"><img id="logo"src="/img/image1.jpeg"></a>
       <nav class="navbar" id="my-navbar">
         <div class="container" id="navContainer">
@@ -47,16 +46,16 @@
     <div class="container" id="faq">
       <h3 class="heading"><u>FAQ</u></h3>
       <div id="faqContent">
-        <h4>Q: Do you make custom Nova Buntings?</h4>
+        <h4><b>Q: Do you make custom Nova Buntings?</b></h4>
         <h5>A: Yes! Custom Nova Buntings can be made upon request</h5>
-        <h4>Q: How can I buy a Nova Bunting?</h4>
+        <h4><b>Q: How can I buy a Nova Bunting?</b></h4>
         <h5>A: To purchase, please contact novabunting@gmail.com or via DM on Instagram at <a href="https://www.instagram.com/novabunting/">@novabunting</a> to place an order. I accept cash, cheque, or etransfer, but if you know of another payment service that would be more convenient for you, I'd love to hear about it!</h5>
-        <h4>Q: How much is shipping?</h4>
-        <h5>A: Shipping accross Canada is FREE! For orders outside of Canada the cost will be determined at the time of order placement</h5>
-        <h4>Q: Are there any shops in Halifax that I can purchse a Nova Bunting?</h4>
-        <h5>A: Yes! Beginning May 11th, Nova Buntings will be available at Curio Art Market on 1479 Birmingham Street (just off Spring Garden Road) in Halifax, Nova Scotia</h5>
-        <h4>Q: Can I purchase a Nova Bunting online?</h4>
+        <h4><b>Q: Can I purchase a Nova Bunting online?</b></h4>
         <h5>A: Yes! Nova Buntings can be pruchased on <a href="https://www.etsy.com/ca/shop/NovaBunting?ref=shop_home_edit">Esty: NovaBunting</a>!</h5>
+        <h4><b>Q: How much is shipping?</b></h4>
+        <h5>A: Shipping accross Canada is FREE! For orders outside of Canada the cost will be determined at the time of order placement</h5>
+        <h4><b>Q: Are there any shops in Halifax that I can purchse a Nova Bunting?</b></h4>
+        <h5>A: Yes! Beginning May 11th, Nova Buntings will be available at Curio Art Market on 1479 Birmingham Street (just off Spring Garden Road) in Halifax, Nova Scotia</h5>
       </div>
       <img src="/img/bridge.jpg" id="haliPic">
       <iframe
@@ -96,6 +95,10 @@
     console.log(height[0].height);
     $('html, body').animate({scrollTop: $('#contact').offset().top -height[0].scrollHeight }, 'slow');
 }); 
+  
+  var marginTop = $('header')[0].scrollHeight;
+  $('#insta').css('margin-top', marginTop);
+  console.log(marginTop);
 </script>
     
 </html>
