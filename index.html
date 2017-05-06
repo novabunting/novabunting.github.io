@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="/css/stylesheet.css">
 <body id="body">
     <header id="top">
-      <img id="buntingHeader" src="/img/bunting.jpg">
+      <img id="buntingHeader" src="/img/pbunting.bmp">
       <a href="index.html"><img id="logo"src="/img/image1.jpeg"></a>
       <nav class="navbar" id="my-navbar">
         <div class="container" id="navContainer">
@@ -18,15 +18,13 @@
                     <span class= "icon-bar"></span>
                     <span class= "icon-bar"></span>
                     <span class= "icon-bar"></span>
-                    <span class= "icon-bar"></span>
                 </button>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li><a class="headerButton" id="nav1">About</a>
-                    <li><a class="headerButton" id="nav2"> Buntings</a>
-                    <li><a class="headerButton" id="nav3"> FAQ</a>
-                    <li><a id="nav4"> Contact</a>
+                    <li><a class="headerButton" id="nav2"> FAQ</a>
+                    <li><a id="nav3"> Contact</a>
                 </ul>
             </div>
         </div>
@@ -46,9 +44,6 @@
           <p id="aboutInfo"> I began sewing when I was 6 years old, working on clothing for stuffed animals and coin purses. I began to knit shortly after, making scarves galore. Fast forward to 2015, I got my first sewing machine and learned how to make pillowcases, quilts, and finally, buntings. Buntings allowed me to be creative. I began Nova Bunting in April 2017 to have the freedom to be creative and to spread positivity and joy through textiles and the shared love of Nova Scotia. Nova Scotia is a great place to explore and relax, and Nova Bunting embodies that culture. 
           If you want to chat about buntings, sewing, or Halifax, catch me walking in Point Pleasant Park, sipping coffee at The Old Apothecary, or spending time with friends on the waterfront. </p>
     </div>
-    <div class="container" id="buntings">
-      <h3 class="heading"><u>Buntings</u></h3>
-    </div>
     <div class="container" id="faq">
       <h3 class="heading"><u>FAQ</u></h3>
       <div id="faqContent">
@@ -60,6 +55,8 @@
         <h5>A: Shipping accross Canada is FREE! For orders outside of Canada the cost will be determined at the time of order placement</h5>
         <h4>Q: Are there any shops in Halifax that I can purchse a Nova Bunting?</h4>
         <h5>A: Yes! Beginning May 11th, Nova Buntings will be available at Curio Art Market on 1479 Birmingham Street (just off Spring Garden Road) in Halifax, Nova Scotia</h5>
+        <h4>Q: Can I purchase a Nova Bunting online?</h4>
+        <h5>A: Yes! Nova Buntings can be pruchased on <a href="https://www.etsy.com/ca/shop/NovaBunting?ref=shop_home_edit">Esty: NovaBunting</a>!</h5>
       </div>
       <img src="/img/bridge.jpg" id="haliPic">
       <iframe
@@ -72,7 +69,7 @@
     </div>
     <div class="container" id="contact">
       <h3 class="heading"><u>Contact</u></h3>
-      <img id="contactImg" src="/img/contact.jpeg">
+      <img id="contactImg" src="/img/profile.jpg">
       <div id="contactInfo" class="container">
         <li class="contactList"><img id="instaBadge" src="/img/instaBadge.png"><a href="https://instagram.com/novabunting">@novabunting</a></li>
         <li class="contactList"><img id="fbBadge" src="/img/fbBadge.jpg"><a href="https://www.facebook.com/NovaBunting">Nova Bunting</a></li>
@@ -92,19 +89,13 @@
   $("#nav2").click(function() {
     var height = $('header');
     console.log(height[0].height);
-    $('html, body').animate({scrollTop: $('#buntings').offset().top -height[0].scrollHeight }, 'slow');
+    $('html, body').animate({scrollTop: $('#faq').offset().top -height[0].scrollHeight }, 'slow');
 }); 
   $("#nav3").click(function() {
     var height = $('header');
     console.log(height[0].height);
-    $('html, body').animate({scrollTop: $('#faq').offset().top -height[0].scrollHeight }, 'slow');
-}); 
-  $("#nav4").click(function() {
-    var height = $('header');
-    console.log(height[0].height);
     $('html, body').animate({scrollTop: $('#contact').offset().top -height[0].scrollHeight }, 'slow');
 }); 
-
 </script>
     
 </html>
